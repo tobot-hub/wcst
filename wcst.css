@@ -1,0 +1,77 @@
+#stimulus-card {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 10%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  background: LightGray;
+}
+
+.response-card {
+	float: left;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 10%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  background: LightGray;
+}
+
+.response-cards {
+	display: inline-block;
+}
+
+.circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.square {
+	width: 25px;
+	height: 25px;
+}
+
+.triangle {
+  width: 30px;
+  height: 30px;
+  background: red;
+  clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}
+
+.cross { 
+  background: red; 
+  height: 30px; 
+  position: relative; 
+  left: 10px;
+  width: 10px; 
+} 
+.cross:after { 
+  background: var(--bg-color, #000); 
+  content: ""; 
+  height: 10px; 
+  left: -10px; 
+  position: absolute; 
+  top: 10px; 
+  width: 30px; 
+}
+
+#popup {
+display: none;
+position: absolute;
+top: 20%;
+left: 40%;
+transform: translate(-50%, -50%);
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+border-radius: 5px;
+}
